@@ -51,7 +51,7 @@ echo '</pre>';
 <form action="" method="POST">
     <div class="field">
         <label for="username">Username</label>
-        <input type="text" name="username" id="username" value="" autocomplete="off">
+        <input type="text" name="username" id="username" value="<?php echo Input::get('username') ?>" autocomplete="off">
     </div>
 
     <div class="field">
@@ -66,7 +66,7 @@ echo '</pre>';
 
     <div class="field">
         <label for="name">Enter your name</label>
-        <input type="text" name="name" value="" id="name">
+        <input type="text" name="name" value="<?php echo Input::get('name') ?>" id="name">
     </div>
 
     <input type="submit" value="Register">
