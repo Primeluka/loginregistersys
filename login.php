@@ -15,11 +15,9 @@ if(Input::exists()){
             $login = $user->login(Input::get('username'), Input::get('password'));
             
             if($login) {
-                echo 'Logged';
-                print_r($_SESSION);
+                Redirect::to('index.php');
             } else {
                 echo 'Something goes wrong';
-                print_r($_SESSION);
             }
 
         } else {
